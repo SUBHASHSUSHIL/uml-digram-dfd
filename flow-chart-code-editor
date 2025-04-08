@@ -2,3 +2,64 @@
   1. https://mermaid.live/
   2. https://app.diagrams.net/?src=about      (draw.io)
   3. ppt
+
+AI use in create mermaid code Query chatgpt and deepseek.
+
+example:
+ChatGPT
+i want to make a flow diagram of smart streetlight wihch is intigrated with iccc. write a code to make flow diagram in mermid.live
+
+graph TD;
+    A[Smart Streetlight System] -->|Collects Sensor Data| B[Light Sensors & Motion Detectors];
+    A -->|Receives Commands| C[ICCC (Integrated Command & Control Center)];
+    
+    B -->|Sends Data| D[Streetlight Controller];
+    C -->|Sends Control Signals| D;
+    
+    D -->|Adjusts Brightness| E[Streetlight];
+    D -->|Sends Status Updates| C;
+    
+    E -->|Power Optimization| F[Energy Management System];
+    F -->|Reports Power Consumption| C;
+    
+    C -->|Monitors & Analyzes Data| G[Data Analytics & Dashboard];
+    G -->|Generates Alerts & Reports| H[Operators & Maintenance Team];
+    
+    H -->|Performs Maintenance| I[Field Technicians];
+
+Deepseek
+i want to make a flow diagram of smart streetlight wihch is intigrated with iccc. write a code to make flow diagram in mermid.live
+
+flowchart TD
+    A[Start] --> B[Streetlight Status]
+    B --> C{Is Nighttime?}
+    C -- Yes --> D[Turn ON Light]
+    C -- No --> E[Turn OFF Light]
+    D --> F{Object Detected?}
+    E --> Z[Send Status to ICC]
+    F -- Yes --> G[Increase Brightness]
+    F -- No --> H[Maintain Normal Brightness]
+    G --> I[Send Alert to ICC]
+    H --> Z
+    I --> Z
+    Z --> K[Receive Commands from ICC]
+    K --> L{Adjust Settings?}
+    L -- Yes --> M[Update Parameters]
+    L -- No --> N[Continue Operation]
+    M --> B
+    N --> B
+    
+    style A fill:#4CAF50,stroke:#388E3C
+    style B fill:#2196F3,stroke:#0b7dda
+    style C fill:#FF9800,stroke:#e68a00
+    style D fill:#8BC34A,stroke:#7CB342
+    style E fill:#F44336,stroke:#D32F2F
+    style F fill:#FF9800,stroke:#e68a00
+    style G fill:#8BC34A,stroke:#7CB342
+    style H fill:#8BC34A,stroke:#7CB342
+    style I fill:#FFEB3B,stroke:#FBC02D
+    style Z fill:#9C27B0,stroke:#7B1FA2
+    style K fill:#607D8B,stroke:#455A64
+    style L fill:#FF9800,stroke:#e68a00
+    style M fill:#8BC34A,stroke:#7CB342
+    style N fill:#8BC34A,stroke:#7CB342
