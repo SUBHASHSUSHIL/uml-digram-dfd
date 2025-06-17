@@ -17,7 +17,6 @@ This repository contains **UML diagrams, Data Flow Diagrams (DFD), and Excel she
 If you have relevant diagrams to share, follow these steps:
 1. Fork the repository
 2. Add your UML/DFD diagram in the respective folder
-3. Submit a pull request
 
 ## Contact
 For any queries, reach out to: [Sushil Thakur](mailto:sushilthakur9792@gmail.com)
